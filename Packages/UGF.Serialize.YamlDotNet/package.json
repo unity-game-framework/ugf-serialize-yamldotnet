@@ -1,20 +1,20 @@
 {
-  "name": "com.ugf.package.name",
-  "displayName": "UGF.Package.Name",
+  "name": "com.ugf.serialize.yamldotnet",
+  "displayName": "UGF.Serialize.YamlDotNet",
   "version": "0.0.0-preview",
   "unity": "2020.2",
   "apiCompatibility": ".NET Standard 2.0",
-  "description": "No description.",
+  "description": "Serializers implementation using YamlDotNet serialization.",
   "author": {
-      "name": "Unity Game Framework",
-      "url": "https://github.com/unity-game-framework"
+    "name": "Unity Game Framework",
+    "url": "https://github.com/unity-game-framework"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/unity-game-framework/ugf-draft.git"
+    "url": "git://github.com/unity-game-framework/ugf-serialize-yamldotnet.git"
   },
-  "changelogUrl": "https://github.com/unity-game-framework/ugf-draft/blob/master/changelog.md",
-  "licensesUrl": "https://github.com/unity-game-framework/ugf-draft/blob/master/license",
+  "changelogUrl": "https://github.com/unity-game-framework/ugf-serialize-yamldotnet/blob/master/changelog.md",
+  "licensesUrl": "https://github.com/unity-game-framework/ugf-serialize-yamldotnet/blob/master/license",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@unity-game-framework"
   },
