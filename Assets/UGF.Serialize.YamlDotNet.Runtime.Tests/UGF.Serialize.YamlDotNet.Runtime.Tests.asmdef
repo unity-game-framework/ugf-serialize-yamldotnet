@@ -1,0 +1,18 @@
+{
+    "name": "UGF.Serialize.YamlDotNet.Runtime.Tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:433bc7506ef434140820ecfbd2e6a845"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
