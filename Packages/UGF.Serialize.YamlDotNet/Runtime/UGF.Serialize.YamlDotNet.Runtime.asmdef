@@ -1,0 +1,19 @@
+{
+    "name": "UGF.Serialize.YamlDotNet.Runtime",
+    "rootNamespace": "UGF.Serialize.YamlDotNet.Runtime",
+    "references": [
+        "GUID:e76e47a0b9e0396439161248a194baa5",
+        "GUID:6c7389a7d4bbed54e96eb1e71a69798e",
+        "GUID:45cb6418a66530e4abd8950fdee1ea57",
+        "GUID:5bd6d7319b96dab4b887fb59cd3ad7b7"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
