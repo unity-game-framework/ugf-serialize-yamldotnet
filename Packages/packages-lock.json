@@ -1,35 +1,44 @@
 {
   "dependencies": {
     "com.ugf.builder": {
-      "version": "2.0.0",
+      "version": "2.0.1",
       "depth": 2,
       "source": "registry",
       "dependencies": {},
-      "url": "https://api.bintray.com/npm/unity-game-framework/public"
+      "url": "https://unitygameframework.jfrog.io/artifactory/api/npm/default"
     },
     "com.ugf.editortools": {
-      "version": "1.8.1",
+      "version": "1.11.1",
       "depth": 2,
       "source": "registry",
       "dependencies": {},
-      "url": "https://api.bintray.com/npm/unity-game-framework/public"
+      "url": "https://unitygameframework.jfrog.io/artifactory/api/npm/default"
+    },
+    "com.ugf.runtimetools": {
+      "version": "2.2.0",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://unitygameframework.jfrog.io/artifactory/api/npm/default"
     },
     "com.ugf.serialize": {
-      "version": "4.0.0",
+      "version": "5.0.0-preview",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.ugf.builder": "2.0.0",
-        "com.ugf.editortools": "1.8.1"
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.ugf.builder": "2.0.1",
+        "com.ugf.editortools": "1.11.1",
+        "com.ugf.runtimetools": "2.2.0"
       },
-      "url": "https://api.bintray.com/npm/unity-game-framework/public"
+      "url": "https://unitygameframework.jfrog.io/artifactory/api/npm/default"
     },
     "com.ugf.serialize.yamldotnet": {
       "version": "file:UGF.Serialize.YamlDotNet",
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.ugf.serialize": "4.0.0",
+        "com.ugf.serialize": "5.0.0-preview",
         "com.ugf.yaml": "1.1.0"
       }
     },
@@ -38,7 +47,7 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {},
-      "url": "https://api.bintray.com/npm/unity-game-framework/public"
+      "url": "https://unitygameframework.jfrog.io/artifactory/api/npm/default"
     },
     "com.unity.ext.nunit": {
       "version": "1.0.6",
@@ -48,16 +57,16 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
-      "version": "3.0.3",
+      "version": "3.0.7",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.test-framework": "1.1.1"
+        "com.unity.ext.nunit": "1.0.6"
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
-      "version": "1.1.20",
+      "version": "1.1.27",
       "depth": 0,
       "source": "registry",
       "dependencies": {

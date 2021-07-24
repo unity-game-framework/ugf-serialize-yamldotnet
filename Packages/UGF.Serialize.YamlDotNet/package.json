@@ -2,7 +2,7 @@
   "name": "com.ugf.serialize.yamldotnet",
   "displayName": "UGF.Serialize.YamlDotNet",
   "version": "1.0.0",
-  "unity": "2020.2",
+  "unity": "2020.3",
   "apiCompatibility": ".NET Standard 2.0",
   "description": "Serializers implementation using YamlDotNet serialization.",
   "author": {
@@ -16,13 +16,10 @@
   "changelogUrl": "https://github.com/unity-game-framework/ugf-serialize-yamldotnet/blob/master/changelog.md",
   "licensesUrl": "https://github.com/unity-game-framework/ugf-serialize-yamldotnet/blob/master/license",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@unity-game-framework"
-  },
-  "bintray": {
-    "registry": "https://api.bintray.com/content/unity-game-framework/public"
+    "registry": "https://unitygameframework.jfrog.io/artifactory/api/npm/default"
   },
   "dependencies": {
-    "com.ugf.serialize": "4.0.0",
+    "com.ugf.serialize": "5.0.0-preview",
     "com.ugf.yaml": "1.1.0"
   }
 }
