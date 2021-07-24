@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using UGF.RuntimeTools.Runtime.Contexts;
 using UGF.Serialize.Runtime;
 using UGF.Yaml.Runtime;
 using Unity.Profiling;
@@ -8,7 +9,7 @@ using IYamlDeserializer = YamlDotNet.Serialization.IDeserializer;
 
 namespace UGF.Serialize.YamlDotNet.Runtime
 {
-    public class SerializerYamlDotNet : SerializerAsyncBase<string>
+    public class SerializerYamlDotNet : SerializerAsync<string>
     {
         public IYamlSerializer Serializer { get; }
         public IYamlDeserializer Deserializer { get; }
@@ -34,22 +35,22 @@ namespace UGF.Serialize.YamlDotNet.Runtime
             Deserializer = deserializer ?? throw new ArgumentNullException(nameof(deserializer));
         }
 
-        public override string Serialize(object target)
+        protected override object OnSerialize(object target, IContext context)
         {
             return InternalSerialize(target);
         }
 
-        public override object Deserialize(Type targetType, string data)
+        protected override object OnDeserialize(Type targetType, string data, IContext context)
         {
             return InternalDeserialize(targetType, data);
         }
 
-        public override Task<string> SerializeAsync(object target)
+        protected override Task<string> OnSerializeAsync(object target, IContext context)
         {
             return Task.Run(() => InternalSerialize(target));
         }
 
-        public override Task<object> DeserializeAsync(Type targetType, string data)
+        protected override Task<object> OnDeserializeAsync(Type targetType, string data, IContext context)
         {
             return Task.Run(() => InternalDeserialize(targetType, data));
         }
